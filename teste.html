@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(153, 152, 152);
+            margin: 2rem font-family: sans-serif;
+        }
+
+        .item {
+            background-color: blueviolet;
+            box-shadow: 8px 8px 5px rgb(73, 68, 68);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 400px auto;
+            grid-template-areas:
+                'nav header'
+                'nav main'
+                'footer footer';
+
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+        .nav{
+            grid-area: nav;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header item">
+            <h1>Cabeçalho</h1>
+        </header>
+        <footer class="footer item">
+            <h1>Footer</h1>
+        </footer>
+        <main class="main item">
+            <h1>Conteudo</h1>
+        </main>
+        <nav class="nav item">
+            <h1>navegação</h1>
+        </nav>
+
+    </div>
+</body>
+
+</html>
