@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    background-color: cyan;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu {
+    background-color: darkgray;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navegation{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    grid-gap: 1.5rem;
+}
